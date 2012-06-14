@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>plg_headLoader</name>
+	<author>Sam Coulg</author>
+	<creationDate>13/06/2012</creationDate>
+	<copyright>Copyright (C) 2012 Whitelabelextensions.com All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@whitelabelextensions.com</authorEmail>
+	<authorUrl>http://www.whitelabelextensions.com</authorUrl>
+	<version>2.5.0</version>
+	<description>Plugin to enable asynchronous loading of javascripts</description>
+	<files>
+            <filename plugin="headLoader">headLoader.php</filename>
+            <filename>index.html</filename>
+            <folder>js</folder>
+	</files>
+	<config>
+            <fields name="params">
+                <fieldset name="basic">
+                    <field 
+                        name="scripts" 
+                        type="textarea"
+                        default=""
+                        description="Paths to scripts that should be loaded asynchronously, each on a new line"
+                        label="Script paths"
+                        rows="10"
+                        cols="40"
+                        />
+                </fieldset>
+            </fields>
+	</config>
+</extension>
